@@ -1,0 +1,31 @@
+@import '../../partials/partials.scss';
+
+.site-nav {
+    @include flex(column, center, "");
+    padding-right: $rem-16;
+    &__ctn {
+        @include flex(column, space-evenly, "");
+        height: 50%;
+        text-align: right;
+    }
+    &__link {
+        color: #ffffff;
+        position: relative;
+        &:hover > .site-nav__link-box {
+            width:110%;
+            transition: all 0.35s;
+        }
+    }
+    &__link-box {
+            position: absolute;
+            display: block;
+            border-bottom: 3px solid #FFFFFF;
+            width:10%;
+            height: 15px;
+            right: -1.5px;
+            top: 52%;
+            -webkit-transition: all 0.35s;
+            transition: all 0.35s;
+    }
+        
+}
