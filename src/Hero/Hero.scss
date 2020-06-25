@@ -1,0 +1,12 @@
+@import '../../partials/partials.scss';
+
+.hero {
+    @include sizing (100%, 50vh);
+    background-image: url('../Hero/HeroAssets/hero-img.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    &__ctn {
+        width: 100%;
+    }
+}
