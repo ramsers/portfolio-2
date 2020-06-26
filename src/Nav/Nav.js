@@ -20,26 +20,23 @@ class Nav extends React.Component {
     render() {
         return(
             <nav className="site-nav">
+                <div className="site-nav__logo">Raheim Bailey</div>
                 <div className="site-nav__ctn">
                     <BrowserRouter>
                         <NavLink activeClassName="active" className="site-nav__link" to='/#home'>
                             Home
-                            <span className='site-nav__link-box'></span>
                         </NavLink>
     
                         <NavLink  className="site-nav__link" to='/#projects'>
                             Projects
-                            <span className='site-nav__link-box'></span>
                         </NavLink>
     
                         <NavLink  className="site-nav__link" className="site-nav__link" to='/#about'>
                             About
-                            <span className='site-nav__link-box'></span>
                         </NavLink>
     
                         <NavLink  className="site-nav__link" to='/#contact'>
                             Contact
-                            <span className='site-nav__link-box'></span>
                         </NavLink>
                     </BrowserRouter>
                 </div>

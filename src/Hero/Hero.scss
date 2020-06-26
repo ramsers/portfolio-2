@@ -9,6 +9,6 @@
     &__ctn {
         @include sizing(100%, 100%);
         @include flex(row, flex-end, "");
-        padding: 0 $rem-16 0 $rem-16;
+        // padding: 0 $rem-16 0 $rem-16;
     }
 }

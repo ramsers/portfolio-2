@@ -1,41 +1,31 @@
 @import '../../partials/partials.scss';
 
+.site-nav__link:active, .site-nav__link:focus {
+    border: 1px solid #ffffff;
+    width: 110%;
+}
+
 .site-nav {
-    @include flex(column, center, "");
-    padding-right: $rem-16;
+    @include flex(row, space-between, center);
+    height: 10%;
+    width: 100vw;
+    padding: $rem-16 $rem-16 0 $rem-16;
+    &__logo {
+        font-family: 'Cantarell', sans-serif;
+        font-size: .75rem;
+        color: #ffffff;
+       
+    }
     &__ctn {
-        @include flex(column, space-evenly, "");
-        height: 50%;
-        text-align: right;
+        @include flex(row, space-evenly, center);
+        height:100%;
+        width: 60%;
     }
     &__link {
         color: #ffffff;
-        position: relative;
-        transition: all 3.5s;
-        &:hover  {
-            border: 1px solid #fff;
-            width:110%;
-            // transition: all 0.35s;
-        }
-    }
-
-    
-
-    &__link-box {
-            position: absolute;
-            display: block;
-            border-bottom: 3px solid #FFFFFF;
-            width:10%;
-            height: 15px;
-            right: -1.5px;
-            top: 52%;
-            -webkit-transition: all 0.35s;
-            transition: all 0.35s;
+        font-size: .75rem;
+        font-family: 'Red Hat Text', sans-serif;
     }
         
 }
 
-.site-nav__link:active, .site-nav__link:focus {
-    border: 1px solid #fff;
-    width: 110%;
-}
