@@ -14,7 +14,7 @@
         margin-bottom: $rem-32;
     }
     @include desktop {
-        padding: $rem-24 $rem-48 0 $rem-48;
+        padding: $rem-24 $rem-64 0 $rem-48;
         margin-bottom: $rem-32;
     }
     &__logo {
@@ -22,7 +22,10 @@
         font-size: .75rem;
         color: #ffffff;
        @include tablet {
-           font-size: 1rem;
+           font-size: $rem-16;
+       }
+       @include desktop {
+           font-size: $rem-24;
        }
     }
     &__ctn {
@@ -40,6 +43,9 @@
         @include tablet {
             margin-left: 2rem;
             font-size: 1rem;
+        }
+        @include desktop {
+            font-size: $rem-24;
         }
     }  
 }

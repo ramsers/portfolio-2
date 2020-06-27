@@ -12,6 +12,9 @@
     @include desktop-small {
         height:100vh;
     }
+    @include desktop {
+        height:100vh;
+    }
     &__ctn {
         @include sizing(100%, 90%);
         @include flex(row, center, "");
@@ -35,6 +38,10 @@
             top: 30%;
             left: 35%;
         }
+        @include desktop{
+            top: 35%;
+            left: 38%;
+        }
     }
     &__circle {
         @include sizing(125px, 125px);
@@ -47,6 +54,9 @@
         }
         @include desktop-small {
             @include sizing(300px, 300px);
+        }
+        @include desktop {
+            @include sizing(400px, 400px);
         }
     }
     &__head {
@@ -62,6 +72,10 @@
             font-size: 3.25rem;
             padding-bottom: $rem-24;
         }
+        @include desktop{
+            font-size: $rem-56;
+            padding-bottom: $rem-24;
+        }
     }
     &__sub-head {
         color: #fff;
@@ -71,6 +85,10 @@
             font-size: $rem-24;
         }
         @include desktop-small {
+            font-size: $rem-32;
+            padding-bottom: $rem-16;
+        }
+        @include desktop{
             font-size: $rem-32;
             padding-bottom: $rem-16;
         }
