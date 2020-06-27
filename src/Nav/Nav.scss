@@ -11,9 +11,11 @@
     }
     @include desktop-small {
         padding: $rem-24 $rem-48 0 $rem-48;
+        margin-bottom: $rem-32;
     }
     @include desktop {
         padding: $rem-24 $rem-48 0 $rem-48;
+        margin-bottom: $rem-32;
     }
     &__logo {
         font-family: 'Cantarell', sans-serif;

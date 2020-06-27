@@ -9,6 +9,9 @@
     @include tablet {
         height: 75vh;
     }
+    @include desktop-small {
+        height:100vh;
+    }
     &__ctn {
         @include sizing(100%, 90%);
         @include flex(row, center, "");
@@ -25,6 +28,13 @@
         position: absolute;
         top:33%;
         left: 20%;
+        @include tablet {
+            left: 36%;
+        }
+        @include desktop-small {
+            top: 30%;
+            left: 35%;
+        }
     }
     &__circle {
         @include sizing(125px, 125px);
@@ -33,6 +43,10 @@
         margin-left: -60%;
         @include tablet {
             @include sizing(240px, 240px);
+            margin-left: -40%;
+        }
+        @include desktop-small {
+            @include sizing(300px, 300px);
         }
     }
     &__head {
@@ -41,10 +55,24 @@
         font-weight: bold;
         text-transform: uppercase;
         padding-bottom: $rem-8;
+        @include tablet {
+            font-size: $rem-36;
+        }
+        @include desktop-small {
+            font-size: 3.25rem;
+            padding-bottom: $rem-24;
+        }
     }
     &__sub-head {
         color: #fff;
         padding-bottom: $rem-4;
         font-family: 'Red Hat Text', sans-serif;
+        @include tablet {
+            font-size: $rem-24;
+        }
+        @include desktop-small {
+            font-size: $rem-32;
+            padding-bottom: $rem-16;
+        }
     }
 }
