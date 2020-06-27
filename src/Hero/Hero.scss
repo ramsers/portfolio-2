@@ -87,10 +87,12 @@
         @include desktop-small {
             font-size: $rem-32;
             padding-bottom: $rem-16;
+            letter-spacing: .15rem;
         }
         @include desktop{
-            font-size: $rem-32;
+            font-size: $rem-24;
             padding-bottom: $rem-16;
+            letter-spacing: .15rem;
         }
     }
 }
