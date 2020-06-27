@@ -1,14 +1,50 @@
 @import '../../partials/partials.scss';
 
 .hero {
-    @include sizing (100%, 50vh);
-    background-image: url('../Hero/HeroAssets/hero-img.jpg');
+    @include sizing (100%, 52vh);
+    background-image: url('../Hero/HeroAssets/hero-img2.jpg');
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
+    @include tablet {
+        height: 75vh;
+    }
     &__ctn {
-        @include sizing(100%, 100%);
-        @include flex(row, flex-end, "");
-        // padding: 0 $rem-16 0 $rem-16;
+        @include sizing(100%, 90%);
+        @include flex(row, center, "");
+    }
+    &__content-ctn {
+        @include sizing(90%, 80%);
+        @include flex(row, center, center);
+        position: relative;
+        @include tablet {
+            justify-content: center;
+        }
+    }
+    &__content {
+        position: absolute;
+        top:33%;
+        left: 20%;
+    }
+    &__circle {
+        @include sizing(125px, 125px);
+        background-color: #808080;
+        border-radius: 50%;
+        margin-left: -60%;
+        @include tablet {
+            @include sizing(240px, 240px);
+        }
+    }
+    &__head {
+        color: #fff;
+        font-size: $rem-24;
+        font-weight: bold;
+        text-transform: uppercase;
+        padding-bottom: $rem-8;
+    }
+    &__sub-head {
+        color: #fff;
+        padding-bottom: $rem-4;
+        font-family: 'Red Hat Text', sans-serif;
     }
 }

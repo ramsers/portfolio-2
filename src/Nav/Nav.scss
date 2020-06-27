@@ -1,31 +1,44 @@
 @import '../../partials/partials.scss';
 
-.site-nav__link:active, .site-nav__link:focus {
-    border: 1px solid #ffffff;
-    width: 110%;
-}
 
 .site-nav {
     @include flex(row, space-between, center);
     height: 10%;
     width: 100vw;
-    padding: $rem-16 $rem-16 0 $rem-16;
+    padding: $rem-16 $rem-16 $rem-32 $rem-16;
+    @include tablet {
+        padding: $rem-24 $rem-32 $rem-32 $rem-32;
+    }
+    @include desktop-small {
+        padding: $rem-24 $rem-48 0 $rem-48;
+    }
+    @include desktop {
+        padding: $rem-24 $rem-48 0 $rem-48;
+    }
     &__logo {
         font-family: 'Cantarell', sans-serif;
         font-size: .75rem;
         color: #ffffff;
-       
+       @include tablet {
+           font-size: 1rem;
+       }
     }
     &__ctn {
         @include flex(row, space-evenly, center);
         height:100%;
         width: 60%;
+        @include tablet {
+            justify-content: flex-end;
+        }
     }
     &__link {
         color: #ffffff;
         font-size: .75rem;
         font-family: 'Red Hat Text', sans-serif;
-    }
-        
+        @include tablet {
+            margin-left: 2rem;
+            font-size: 1rem;
+        }
+    }  
 }
 
