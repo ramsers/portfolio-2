@@ -2,6 +2,7 @@ import React, {useRef, useEffect} from 'react';
 import './Hero.scss';
 import Nav from '../Nav/Nav';
 import {TweenMax, Power3} from 'gsap';
+import Typical from 'react-typical';
 
 const Hero = () => {
 
@@ -38,8 +39,22 @@ const Hero = () => {
                     <div ref={el => {heroShape = el}} className="hero__circle"></div>
                     <div ref={el=>{heroContent = el}} className="hero__content">
                         <h1 className="hero__head">Web Developer</h1>
-                        <h2 className="hero__sub-head">Front End Focused</h2>
-                        <h2 className="hero__sub-head">Cake Enthusiast</h2>
+                        <h2 className="hero__sub-head"><Typical className="hero__sub-head"
+                            steps={[
+                                2500,
+                                'Front End Focused'
+                            ]}
+                        
+                            />
+                        </h2>
+                        <h2 className="hero__sub-head">
+                            <Typical className="hero__sub-head"
+                            steps={[
+                                4000,
+                                'Cake Enthusiast'
+                            ]}
+                            />
+                        </h2>
                     </div>
                 </div>
             </section>
