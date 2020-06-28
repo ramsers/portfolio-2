@@ -2,10 +2,11 @@
 
 
 .site-nav {
-    @include flex(row, space-between, center);
+    @include flex(row, space-between, baseline);
     height: 10%;
     width: 100vw;
-    padding: $rem-16 $rem-16 $rem-32 $rem-16;
+    padding: $rem-16 $rem-16 0 $rem-16;
+    margin-bottom: $rem-32;
     @include tablet {
         padding: $rem-24 $rem-32 $rem-32 $rem-32;
     }
