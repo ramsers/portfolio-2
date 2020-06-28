@@ -31,6 +31,8 @@
         position: absolute;
         top:33%;
         left: 20%;
+        transform: translateX(100%);
+        opacity: 0;
         @include tablet {
             left: 36%;
         }
@@ -44,19 +46,28 @@
         }
     }
     &__circle {
-        @include sizing(125px, 125px);
-        background-color: #808080;
+        @include sizing(105px, 105px);
+        transform:translateY(100%);
+        opacity: 0;
+        background-color: #000000;
+        border: 10px solid #FF0000;
+        -webkit-box-shadow: 0px 0px 20px 3px rgba(220,20,60,1);
+        -moz-box-shadow: 0px 0px 20px 3px rgba(220,20,60,1);
+        box-shadow: 0px 0px 20px 3px rgba(220,20,60,1);
         border-radius: 50%;
         margin-left: -60%;
         @include tablet {
-            @include sizing(240px, 240px);
+            @include sizing(220px, 220px);
             margin-left: -40%;
+            border: 15px solid #FF0000;
         }
         @include desktop-small {
-            @include sizing(300px, 300px);
+            @include sizing(285px, 285px);
+            border: 15px solid #FF0000;
         }
         @include desktop {
-            @include sizing(400px, 400px);
+            @include sizing(380px, 380px);
+            border: 20px solid #FF0000;
         }
     }
     &__head {
