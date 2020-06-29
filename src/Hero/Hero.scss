@@ -18,6 +18,12 @@
     &__ctn {
         @include sizing(100%, 90%);
         @include flex(row, center, "");
+        @include desktop-small {
+            height:85%;
+        }
+        @include desktop {
+            height: 82%;
+        }
     }
     &__content-ctn {
         @include sizing(90%, 80%);
@@ -72,8 +78,9 @@
     }
     &__head {
         color: #fff;
-        font-size: $rem-24;
+        font-size: 1.4rem;
         font-weight: bold;
+        font-family: 'Cantarell', sans-serif;
         text-transform: uppercase;
         padding-bottom: $rem-8;
         @include tablet {

@@ -1,0 +1,25 @@
+@import '../../partials/partials.scss';
+
+.skills {
+    height: 72vh;
+    background-color: #fff;
+    padding:$rem-16;
+    &__title {
+        text-align: center;
+        font-size: $rem-24;
+        font-family: 'Cantarell', sans-serif;
+        margin-bottom: $rem-16;
+    }
+    &__ctn {
+        @include flex(row, center, "");
+        flex-wrap: nowrap;
+    }
+    &__column {
+        @include flex(column, "", center);
+        width: 50%;
+    }
+    &__logo {
+        @include sizing(60px, 55px);
+        margin-bottom: .8rem;
+    }
+}
