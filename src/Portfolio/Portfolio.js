@@ -26,8 +26,10 @@ const Portfolio = () => {
                     <div className="portfolio__highlight project__one">
                         <div className="portfolio__text-ctn">
                             <p className="portfolio__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga, laboriosam.</p>
-                            <a href="#" className="portfolio__link">View On Github</a>
-                            <a href="#" className="portfolio__link">Watch Demo Video</a>
+                            <div className="portfolio__link-ctn">
+                                <a href="#" className="portfolio__link">View On Github</a>
+                                <a href="#" className="portfolio__link">Watch Demo Video</a>
+                            </div>
                         </div>
                     </div>
                 </div>
