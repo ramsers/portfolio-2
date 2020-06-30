@@ -2,7 +2,7 @@
 
 .hero {
     @include sizing (100%, 52vh);
-    background-image: url('../Hero/HeroAssets/hero-img2.jpg');
+    background-image: url('../Hero/HeroAssets/new-hero.jpg');
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -55,8 +55,8 @@
         @include sizing(105px, 105px);
         transform:translateY(100%);
         opacity: 0;
-        background-color: #000000;
-        border: 10px solid #FF0000;
+        background-color: rgba(0,0,0,.51);
+        border: 10px solid #CB2D3E;
         -webkit-box-shadow: 0px 0px 20px 3px rgba(220,20,60,1);
         -moz-box-shadow: 0px 0px 20px 3px rgba(220,20,60,1);
         box-shadow: 0px 0px 20px 3px rgba(220,20,60,1);
@@ -65,15 +65,15 @@
         @include tablet {
             @include sizing(220px, 220px);
             margin-left: -40%;
-            border: 15px solid #FF0000;
+            border: 15px solid #CB2D3E;
         }
         @include desktop-small {
             @include sizing(285px, 285px);
-            border: 15px solid #FF0000;
+            border: 15px solid #CB2D3E;
         }
         @include desktop {
             @include sizing(380px, 380px);
-            border: 20px solid #FF0000;
+            border: 20px solid #CB2D3E;
         }
     }
     &__head {
@@ -98,7 +98,9 @@
     &__sub-head {
         color: #fff;
         padding-bottom: $rem-4;
-        font-family: 'Red Hat Text', sans-serif;
+        // font-family: 'Red Hat Text', sans-serif;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 400;
         @include tablet {
             font-size: $rem-24;
         }
@@ -121,19 +123,19 @@
         @include desktop-small {
             @include flex(column, center, center);
             position: absolute;
-            left: 50%;
+            left: 46%;
             bottom: 3%;
         }
         @include desktop{
             @include flex(column, center, center);
             position: absolute;
-            left: 50%;
+            left: 46%;
             bottom: 3%;
         }
     }
     &__scroll-text{
         opacity: 0;
-        font-family: 'Red Hat Text', sans-serif;
+        font-family: 'Raleway', sans-serif;
         font-size: $rem-18;
         color: #fff;
     }

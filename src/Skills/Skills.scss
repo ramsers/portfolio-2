@@ -2,7 +2,7 @@
 
 .skills {
     height: 72vh;
-    background-color: #fff;
+    background-color: #0B1413;
     padding:$rem-16;
     &__title {
         text-align: center;
@@ -13,13 +13,30 @@
     &__ctn {
         @include flex(row, center, "");
         flex-wrap: nowrap;
+        @include desktop-small {
+            flex-wrap: wrap;
+        }
+        @include desktop {
+            flex-wrap: wrap;
+        }
     }
     &__column {
         @include flex(column, "", center);
         width: 50%;
+        @include desktop-small {
+            @include flex (row, space-evenly, center);
+            width: 60%;
+        }
+        @include desktop{
+            @include flex (row, space-evenly, center);
+            width: 80%;
+        }
     }
     &__logo {
         @include sizing(60px, 55px);
         margin-bottom: .8rem;
+        @include desktop-small {
+            @include sizing(50px, 50px);
+        }
     }
 }
