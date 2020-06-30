@@ -85,6 +85,7 @@
         padding-bottom: $rem-8;
         @include tablet {
             font-size: $rem-36;
+            padding-bottom: $rem-16;
         }
         @include desktop-small {
             font-size: 3.25rem;
@@ -103,6 +104,7 @@
         font-weight: 400;
         @include tablet {
             font-size: $rem-24;
+            padding-bottom: $rem-8;
         }
         @include desktop-small {
             font-size: $rem-32;

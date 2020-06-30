@@ -1,0 +1,48 @@
+@import '../../partials/partials.scss';
+
+.portfolio {
+    background-color: #0E1414;
+    padding-top: $rem-32;
+    height: 100vh;
+    &__ctn {
+        @include flex(column, "", center);
+        padding: 0 $rem-16 0 $rem-16;
+    }
+    &__title {
+        text-align: center;
+        font-size: $rem-24;
+        font-family: 'Cantarell', sans-serif;
+        margin-bottom: $rem-24;
+        color: #fff;
+    }
+    &__image-ctn {
+        padding-bottom: $rem-16;
+    }
+    &__image-border {
+        position: relative;
+        &::before {
+            content: '';
+            display: block;
+            border: 1px solid #CB2D3E;
+            height:90%;
+            width: 100%;
+            right: 8px;
+            top: -8px;
+            position: absolute;
+        }
+    }
+    &__image {
+        width: 100%;
+        padding-bottom: $rem-16;
+    }
+    &__tech {
+        @include flex(row, center, "");
+        flex-wrap: wrap;
+        font-family: 'Raleway', sans-serif;
+    }
+    &__tech-item {
+        color: #fff;
+        padding-right: $rem-8;
+        line-height: 1.4rem;
+    }
+}
