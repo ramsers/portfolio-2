@@ -23,10 +23,6 @@ class Nav extends React.Component {
                 <div className="site-nav__logo">Raheim Bailey</div>
                 <div className="site-nav__ctn">
                     <BrowserRouter>
-                        <NavLink activeClassName="active" className="site-nav__link" to='/#home'>
-                            Home
-                        </NavLink>
-    
                         <NavLink  className="site-nav__link" to='/#projects'>
                             Projects
                         </NavLink>
