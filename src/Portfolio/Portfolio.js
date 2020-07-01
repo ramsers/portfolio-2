@@ -7,8 +7,8 @@ const Portfolio = () => {
         <section id="projects" className="portfolio">
             <h3 className="portfolio__title">My Work</h3>
             <div className="portfolio__ctn">
-                <div className="portfolio__project-ctn">
-                    <h3 className="portfolio__project-title">Filler Title</h3>
+            <h3 className="portfolio__project-title">Filler Title</h3>
+                <div className="portfolio__project-ctn portfolio__project-1">
                     <div className="portfolio__image-ctn">
                         <div className="portfolio__image-border">
                             <img src={port} alt="" className="portfolio__image"/>
@@ -25,6 +25,7 @@ const Portfolio = () => {
                     </div>
                     <div className="portfolio__highlight project__one">
                         <div className="portfolio__text-ctn">
+                        <h3 className="portfolio__project-title-2">Filler Title</h3>
                             <p className="portfolio__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga, laboriosam.</p>
                             <div className="portfolio__link-ctn">
                                 <a href="#" className="portfolio__link">View On Github</a>

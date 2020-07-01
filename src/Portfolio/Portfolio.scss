@@ -2,28 +2,73 @@
 
 .portfolio {
     background-color: #0E1414;
-    padding-top: $rem-32;
+    // padding-top: $rem-32;
     height: 100%;
     &__title {
         text-align: center;
-        font-size: $rem-24;
+        font-size: $rem-20;
+        text-transform: uppercase;
         font-family: 'Cantarell', sans-serif;
         margin-bottom: $rem-24;
         color: #fff;
+        @include desktop-small {
+            margin-bottom: $rem-40;
+        }
+        @include desktop{
+            margin-bottom: $rem-40;
+        }
     }
     &__ctn {
         @include flex(column, "", center);
         padding: 0 $rem-16 0 $rem-16;
+        @include tablet {
+            padding: 0 $rem-32 0 $rem-32;
+        }
+        @include desktop-small {
+            padding: 0 $rem-48 0 $rem-48;
+        }
+    }
+    &__project-ctn {
+        @include tablet {
+            @include flex (row);
+        }
     }
     &__project-title {
         text-align: center;
-        font-size: $rem-18;
+        font-size: $rem-16;
         font-family: 'Cantarell', sans-serif;
         padding-bottom: $rem-24;
         color: #fff;
+        @include tablet {
+            display: none;
+        }
+    }
+    &__project-title-2 {
+        text-align: center;
+        font-size: $rem-16;
+        font-family: 'Cantarell', sans-serif;
+        padding-bottom: $rem-24;
+        color: #fff;
+        display: none; 
+        @include tablet {
+            display: block;
+        }
     }
     &__image-ctn {
         padding-bottom: $rem-16;
+        
+        @include desktop-small {
+            max-width:50%;
+        }
+        @include desktop {
+            max-width:50%;
+        }
+    }
+    &__text-ctn {
+        @include tablet {
+            @include flex(column, space-evenly, center);
+            height: 85%;
+        }
     }
     &__image-border {
         position: relative;
@@ -36,7 +81,18 @@
             right: 8px;
             top: -8px;
             position: absolute;
+           transition: all .3s ease-in;
+            @include desktop-small {
+                height: 94%;
+            }
+            @include desktop {
+                height: 94%;
+            }
         }
+    }
+    .portfolio__image-border:hover::before {
+        right:-9px;
+        top: 15px;
     }
     &__image {
         width: 100%;
@@ -59,6 +115,12 @@
         font-size: .9rem;
         line-height: 1.1rem;
         margin-bottom: $rem-32;
+        @include tablet {
+            width: 80%;
+        }
+        @include desktop-small {
+            width: 80%;
+        }
     }
     &__link-ctn {
         @include flex(row, center, "");
@@ -75,6 +137,7 @@
         margin-bottom: $rem-16;
         border-radius: 25px;
         position: relative;
+        transition: all .3s ease-in;
         &::before {
             content: '';
             display: block;
@@ -83,7 +146,12 @@
             height: 100%;
             width: 100%;
             bottom: 5px;
+            right: 4px;
             border-radius: 25px;
+            transition: all .3s ease-in-out;
         }
+    }
+    .portfolio__link:hover::before {
+        right: -7px;
     }
 }
