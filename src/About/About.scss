@@ -5,21 +5,104 @@
     background-color: #0E1414;
     font-family: 'Raleway', sans-serif;
     padding: $rem-16;
+    @include tablet {
+        padding: $rem-32 $rem-32 $rem-24 $rem-32;
+    }
+    &__ctn {
+        @include flex(column, "", center);
+    }
     &__title {
         color: #fff;
-        font-size: $rem-20;
-        font-family: 'Cantarell', sans-serif;
+        font-size: $rem-24;
+        font-family: 'Red Hat Text', sans-serif;
+        text-transform: uppercase;
         text-align: center;
         padding-bottom: $rem-24;
+        letter-spacing: .15rem;
+    }
+    &__card {
+        @include flex(column, center, center);
+        background-color: #0E1414;
+        padding: 10px 0 10px 0;
+        width: 100%;
+        // border-radius: 15px;
+        position: relative;
+        // border: 1px solid white;
+        @include tablet {
+            background-color: #0E1309;
+            width: 530px;
+            height: 400px;
+            -webkit-box-shadow: 10px 10px 14px -2px rgba(0,0,0,0.75);
+            -moz-box-shadow: 10px 10px 14px -2px rgba(0,0,0,0.75);
+            box-shadow: 10px 10px 14px -2px rgba(0,0,0,0.75);
+                border: 1px solid white;
+        }
+        @include desktop-small {
+            background-color: #0E1309;
+            width: 550px;
+            height: 400px;
+
+        }
+        @include desktop{
+            background-color: #0E1309;
+            width: 550px;
+            height: 400px;
+        }
     }
     &__highlight {
         color: #fff;
         padding-bottom: $rem-16;
+        line-height: 1.4rem;
+        text-align: justify;
+        @include tablet {
+            font-size: $rem-16;
+            letter-spacing: .05rem;
+            width: 75%;
+        }
+        @include desktop-small {
+            font-size: $rem-16;
+            letter-spacing: .05rem;
+            width: 75%;
+        }
+        @include desktop{
+            font-size: $rem-16;
+            letter-spacing: .05rem;
+            width: 75%;
+            
+        }
     } 
     &__text {
         color: #fff;
+        padding-bottom: $rem-16;
+        line-height: 1.4rem;
+        text-align: justify;
+        @include tablet {
+            font-size: $rem-16;
+            letter-spacing: .05rem;
+            width: 75%;
+        }
+        @include desktop-small {
+            font-size: $rem-16;
+            letter-spacing: .05rem;
+            width: 75%;
+        }
+        @include desktop{
+            font-size: $rem-16;
+            letter-spacing: .05rem;
+            width: 75%;
+        }
     } 
     &__resume {
         color: #fff;
+        text-transform: uppercase;
+        letter-spacing: .1rem;
+        font-weight: bold;
+        transition: border .3s ease-in-out;
+        padding-bottom: 3px;
+        border: 1px solid #fff;
+        padding: 10px 8px;
+        &:hover {
+            border-bottom: 1px solid #CB2D3E;
+        }
     } 
 }

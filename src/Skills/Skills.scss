@@ -1,24 +1,37 @@
 @import '../../partials/partials.scss';
 
 .skills {
-    height: 62vh;
+    height: 46vh;
     background-color: #0E1414;
     padding:$rem-16;
     // margin-bottom: $rem-32;
     @include tablet {
-        height: 38vh;
+        height: 28vh;
+    }
+    @include desktop-small {
+        height: 45vh;
     }
     @include desktop {
         padding-top: $rem-32;
-        height: 35vh;
+        height: 40vh;
     }
     &__title {
         text-align: center;
         font-size: $rem-20;
         text-transform: uppercase;
-        font-family: 'Cantarell', sans-serif;
+        // font-family: 'Cantarell', sans-serif;
+        font-family: 'Red Hat Text', sans-serif;
+        letter-spacing: .15rem;
         margin-bottom: $rem-24;
         color: #fff;
+        @include desktop-small {
+            font-size: $rem-24;
+            margin-bottom: $rem-48;
+        }
+        @include desktop{
+            font-size: $rem-24;
+            margin-bottom: $rem-32;
+        }
     }
     &__ctn {
         @include flex(row, center, "");
@@ -31,6 +44,7 @@
         }
         @include desktop {
             flex-wrap: wrap;
+            padding-bottom: 1rem;
         }
     }
     &__column {
@@ -54,6 +68,9 @@
         @include sizing(40px, 35px);
         margin-bottom: .8rem;
         @include desktop-small {
+            @include sizing(50px, 50px);
+        }
+        @include desktop{
             @include sizing(50px, 50px);
         }
     }

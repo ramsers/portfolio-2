@@ -1,21 +1,25 @@
 @import '../../partials/partials.scss';
 
 .portfolio {
-    background-color: #0E1414;
-    // padding-top: $rem-32;
+    background-color: #0e1309;
+    padding-top: $rem-32;
     height: 100%;
     &__title {
         text-align: center;
         font-size: $rem-20;
         text-transform: uppercase;
-        font-family: 'Cantarell', sans-serif;
+        // font-family: 'Cantarell', sans-serif;
+        font-family: 'Red Hat Text', sans-serif;
+        letter-spacing: .15rem;
         margin-bottom: $rem-24;
         color: #fff;
         @include desktop-small {
             margin-bottom: $rem-40;
+            font-size: $rem-24;
         }
         @include desktop{
             margin-bottom: $rem-40;
+            font-size: $rem-24;
         }
     }
     &__ctn {
@@ -25,6 +29,9 @@
             padding: 0 $rem-32 0 $rem-32;
         }
         @include desktop-small {
+            padding: 0 $rem-48 0 $rem-48;
+        }
+        @include desktop {
             padding: 0 $rem-48 0 $rem-48;
         }
     }
@@ -37,23 +44,30 @@
     &__project-title {
         text-align: center;
         font-size: $rem-16;
-        font-family: 'Cantarell', sans-serif;
+        // font-family: 'Cantarell', sans-serif;
+        font-family: 'Red Hat Text', sans-serif;
         padding-bottom: $rem-24;
         color: #fff;
         @include tablet {
             display: none;
-            
         }
     }
     &__project-title-2 {
         text-align: center;
         font-size: $rem-16;
-        font-family: 'Cantarell', sans-serif;
+        // font-family: 'Cantarell', sans-serif;
+        font-family: 'Red Hat Text', sans-serif;
         padding-bottom: $rem-24;
         color: #fff;
         display: none; 
         @include tablet {
             display: block;
+        }
+        @include desktop-small {
+            font-size: $rem-18;
+        }
+        @include desktop{
+            font-size: $rem-18;
         }
     }
     &__image-ctn {
@@ -117,6 +131,9 @@
             top: -8px;
             position: absolute;
            transition: all .3s ease-in;
+            @include tablet {
+                height: 94%;
+            }
             @include desktop-small {
                 height: 94%;
             }
@@ -150,11 +167,19 @@
         font-size: .9rem;
         line-height: 1.1rem;
         margin-bottom: $rem-32;
+        text-align: left;
         @include tablet {
             width: 80%;
         }
         @include desktop-small {
             width: 80%;
+            font-size: $rem-18;
+            line-height: 1.4rem;
+        }
+        @include desktop {
+            width: 80%;
+            font-size: $rem-18;
+            line-height: 1.4rem;
         }
     }
     &__link-ctn {
@@ -170,7 +195,7 @@
         width:80%;
         text-align: center;
         margin-bottom: $rem-16;
-        border-radius: 25px;
+        // border-radius: 25px;
         position: relative;
         transition: all .3s ease-in;
         &::before {
@@ -180,9 +205,9 @@
             border: 1px solid #fff;
             height: 100%;
             width: 100%;
-            bottom: 5px;
+            bottom: 3px;
             right: 4px;
-            border-radius: 25px;
+            // border-radius: 25px;
             transition: all .3s ease-in-out;
         }
     }
