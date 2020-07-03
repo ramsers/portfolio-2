@@ -1,0 +1,12 @@
+@import '../../partials/partials.scss';
+
+.contact {
+    height: 100%;
+    background-color: #0E1414;
+    &__ctn {
+        padding: 0 $rem-16 0 $rem-16;
+    }
+    &__icon {
+        @include sizing(25px, 25px);
+    }
+}
