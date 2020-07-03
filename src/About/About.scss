@@ -22,20 +22,20 @@
     }
     &__card {
         @include flex(column, center, center);
-        background-color: #0E1414;
+        background-color: #0E1309;
         padding: 10px 0 10px 0;
         width: 100%;
-        // border-radius: 15px;
         position: relative;
-        // border: 1px solid white;
         @include tablet {
             background-color: #0E1309;
             width: 530px;
             height: 400px;
-            -webkit-box-shadow: 10px 10px 14px -2px rgba(0,0,0,0.75);
-            -moz-box-shadow: 10px 10px 14px -2px rgba(0,0,0,0.75);
-            box-shadow: 10px 10px 14px -2px rgba(0,0,0,0.75);
-                border: 1px solid white;
+            -webkit-box-shadow: 26px 20px 22px -8px rgba(0,0,0,0.75);
+            -moz-box-shadow: 26px 20px 22px -8px rgba(0,0,0,0.75);
+            box-shadow: 26px 20px 22px -8px rgba(0,0,0,0.75);            
+            border: 1px solid white;
+            transform: translateY(150px);
+            opacity: 0;
         }
         @include desktop-small {
             background-color: #0E1309;
@@ -97,12 +97,20 @@
         text-transform: uppercase;
         letter-spacing: .1rem;
         font-weight: bold;
-        transition: border .3s ease-in-out;
+        transition: background .3s ease-in-out;
         padding-bottom: 3px;
         border: 1px solid #fff;
         padding: 10px 8px;
         &:hover {
-            border-bottom: 1px solid #CB2D3E;
+            background-color: #CB2D3E;
+            color: #000;
         }
     } 
+}
+
+.desc {
+    @include tablet {
+        opacity: 0;
+        transform: translateX(150px);
+    }
 }
