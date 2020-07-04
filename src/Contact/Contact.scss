@@ -4,9 +4,65 @@
     height: 100%;
     background-color: #0E1414;
     &__ctn {
-        padding: 0 $rem-16 0 $rem-16;
+        padding: $rem-16 $rem-16 0 $rem-16;
+    }
+    &__social-ctn {
+        margin-bottom: $rem-32;
+    }
+    &__social {
+        @include flex(row, "", center);
+        margin-bottom: 1rem;
+    }
+    &__social-head {
+        text-align: center;
+    }
+    &__social-title {
+        font-size: $rem-20;
+        color: #fff;
+        font-family: 'Red Hat Text', sans-serif;
+        margin-bottom: $rem-8;
+    }
+    &__social-text {
+        font-size: $rem-18;
+        color: #fff;
+        font-family: 'Red Hat Text', sans-serif;
+        margin-bottom: $rem-16;
+    }
+    &__url {
+        font-family: 'Raleway', sans-serif;
+        color: #fff;
     }
     &__icon {
         @include sizing(25px, 25px);
+        margin-right: 1rem;
+    }
+    &__commit {
+        margin-bottom: $rem-32;
+    }
+    &__commit-title {
+        font-size: $rem-20;
+        color: #fff;
+        font-family: 'Red Hat Text', sans-serif;
+        margin-bottom: $rem-16;
+    }
+    &__commit-msg {
+        font-family: 'Raleway', sans-serif;
+        color: #fff;
+        line-height: 1.1rem;
+    }
+    &__navigate-title {
+        font-size: $rem-20;
+        color: #fff;
+        font-family: 'Red Hat Text', sans-serif;
+        margin-bottom: $rem-16;
+    }
+    &__navigate {
+        padding-bottom: $rem-32;
+    }
+    &__link {
+        color: #CB2D3E;
+        font-size: $rem-16;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 500;
     }
 }
