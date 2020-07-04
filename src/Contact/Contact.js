@@ -10,7 +10,7 @@ const Contact = () => {
     return(
         <section className="contact">
             <div className="contact__ctn">
-                <div className="contact__social-ctn">
+                <div className="contact__social-ctn footer-ctn">
                     <div className="contact__social-head">
                         <h3 className="contact__social-title">Like What You See?</h3>
                         <p className="contact__social-text">Contact Me Here</p>
@@ -29,14 +29,14 @@ const Contact = () => {
                     </div> 
                 </div>
 
-                <div className="contact__commit">
+                <div className="contact__commit footer-ctn">
                     <h4 className="contact__commit-title">My Commitment</h4>
                     <p className="contact__commit-msg">To bring as much value to any organization that I am
                         apart of and to conitually learn and improve my skills as a developer.
                     </p>
                 </div>
                 
-                <div className="contact__navigate">
+                <div className="contact__navigate footer-ctn">
                     <h4 className="contact__navigate-title">Navigate</h4>
                     <BrowserRouter>
                         <NavLink className="contact__link" to='/#projects'>Portfolio</NavLink>

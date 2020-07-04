@@ -2,9 +2,20 @@
 
 .contact {
     height: 100%;
-    background-color: #0E1414;
+    background-color: #0e1309;
+    overflow-x: hidden;
     &__ctn {
         padding: $rem-16 $rem-16 0 $rem-16;
+        @include tablet {
+            @include flex(row, space-between, "");
+            padding: $rem-16 $rem-32 0 $rem-32;
+        }
+        @include desktop-small {
+            padding: $rem-32 $rem-48 0 $rem-48;
+        }
+        @include desktop {
+            padding: $rem-32 $rem-48 0 $rem-48;
+        }
     }
     &__social-ctn {
         margin-bottom: $rem-32;
@@ -15,6 +26,9 @@
     }
     &__social-head {
         text-align: center;
+        @include tablet {
+            text-align: left;
+        }
     }
     &__social-title {
         font-size: $rem-20;
@@ -64,5 +78,19 @@
         font-size: $rem-16;
         font-family: 'Raleway', sans-serif;
         font-weight: 500;
+    }
+}
+
+.footer-ctn {
+    @include tablet {
+        // @include flex(column, "", center);
+        width: 25%;
+        margin-right: -5rem;
+    }
+    @include desktop-small {
+        margin-right: -10rem;
+    }
+    @include desktop {
+        margin-right: -10rem;
     }
 }
