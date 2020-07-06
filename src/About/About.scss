@@ -6,7 +6,7 @@
     font-family: 'Raleway', sans-serif;
     padding: $rem-16;
     @include tablet {
-        padding: $rem-32 $rem-32 $rem-24 $rem-32;
+        padding: $rem-32 $rem-32 $rem-48 $rem-32;
     }
     &__ctn {
         @include flex(column, "", center);

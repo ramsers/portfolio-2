@@ -8,13 +8,13 @@
         padding: $rem-16 $rem-16 0 $rem-16;
         @include tablet {
             @include flex(row, space-between, "");
-            padding: $rem-16 $rem-32 0 $rem-32;
+            padding: $rem-32 $rem-64 0 $rem-64;
         }
         @include desktop-small {
-            padding: $rem-32 $rem-48 0 $rem-48;
+            padding: $rem-32 $rem-64 0 $rem-64;
         }
         @include desktop {
-            padding: $rem-32 $rem-48 0 $rem-48;
+            padding: $rem-32 $rem-64 0 $rem-64;
         }
     }
     &__social-ctn {
@@ -35,9 +35,12 @@
         color: #fff;
         font-family: 'Red Hat Text', sans-serif;
         margin-bottom: $rem-8;
+        @include tablet {
+            font-size: $rem-16;
+        }
     }
     &__social-text {
-        font-size: $rem-18;
+        font-size: $rem-16;
         color: #fff;
         font-family: 'Red Hat Text', sans-serif;
         margin-bottom: $rem-16;
@@ -45,6 +48,9 @@
     &__url {
         font-family: 'Raleway', sans-serif;
         color: #fff;
+        @include tablet {
+            font-size: .8rem;
+        }
     }
     &__icon {
         @include sizing(25px, 25px);
@@ -54,7 +60,7 @@
         margin-bottom: $rem-32;
     }
     &__commit-title {
-        font-size: $rem-20;
+        font-size: $rem-16;
         color: #fff;
         font-family: 'Red Hat Text', sans-serif;
         margin-bottom: $rem-16;
@@ -63,12 +69,20 @@
         font-family: 'Raleway', sans-serif;
         color: #fff;
         line-height: 1.1rem;
+        @include tablet {
+            line-height: 1.1rem;
+            text-align: justify;
+            font-size: .8rem;
+        }
     }
     &__navigate-title {
         font-size: $rem-20;
         color: #fff;
         font-family: 'Red Hat Text', sans-serif;
         margin-bottom: $rem-16;
+        @include tablet {
+            font-size: $rem-16;
+        }
     }
     &__navigate {
         padding-bottom: $rem-32;
@@ -78,6 +92,9 @@
         font-size: $rem-16;
         font-family: 'Raleway', sans-serif;
         font-weight: 500;
+        @include tablet {
+            font-size: .8rem;
+        }
     }
 }
 
@@ -85,12 +102,12 @@
     @include tablet {
         // @include flex(column, "", center);
         width: 25%;
-        margin-right: -5rem;
+        margin-right: -5.5rem;
     }
     @include desktop-small {
         margin-right: -10rem;
     }
     @include desktop {
-        margin-right: -10rem;
+        margin-right: -13.5rem;
     }
 }
