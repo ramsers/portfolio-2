@@ -32,7 +32,7 @@ const Contact = () => {
                 <div className="contact__commit footer-ctn">
                     <h4 className="contact__commit-title">My Commitment</h4>
                     <p className="contact__commit-msg">To bring as much value to any organization that I am
-                        apart of and to conitually learn and improve my skills as a developer.
+                        apart of and to continually learn and improve my skills as a developer.
                     </p>
                 </div>
                 
