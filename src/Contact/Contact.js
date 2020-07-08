@@ -8,7 +8,7 @@ import {BrowserRouter} from 'react-router-dom';
 
 const Contact = () => {
     return(
-        <section className="contact">
+        <section id ='contact' className="contact">
             <div className="contact__ctn">
                 <div className="contact__social-ctn footer-ctn">
                     <div className="contact__social-head">

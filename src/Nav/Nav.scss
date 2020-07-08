@@ -7,16 +7,27 @@
     width: 100vw;
     padding: $rem-16 $rem-16 0 $rem-16;
     margin-bottom: $rem-32;
+    position: fixed;
+    top: 0;
+    z-index: 5;
     @include tablet {
         padding: $rem-24 $rem-32 $rem-32 $rem-32;
     }
     @include desktop-small {
-        padding: $rem-24 $rem-48 0 $rem-48;
+        padding: $rem-24 $rem-48 .1rem $rem-48;
         margin-bottom: $rem-32;
+        position: fixed;
+        top: 0;
+        z-index: 5;
+        background-color:rgba(14, 20, 20, .5);
     }
     @include desktop {
-        padding: $rem-24 $rem-64 0 $rem-48;
+        padding: $rem-24 $rem-64 .1rem $rem-48;
         margin-bottom: $rem-32;
+        position: fixed;
+        top: 0;
+        z-index: 5;
+        background-color:rgba(14, 20, 20, .7);
     }
     &__logo {
         font-family: 'Cantarell', sans-serif;
@@ -64,5 +75,9 @@
             font-size: $rem-18;
         }
     }  
+}
+
+.selected {
+    border-bottom: 2px solid red;
 }
 

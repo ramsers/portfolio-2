@@ -23,15 +23,15 @@ class Nav extends React.Component {
                 <div className="site-nav__logo">Raheim Bailey</div>
                 <div className="site-nav__ctn">
                     <BrowserRouter>
-                        <NavLink  className="site-nav__link" to='/#projects'>
+                        <NavLink className="site-nav__link" smooth to='/#projects'>
                             Projects
                         </NavLink>
     
-                        <NavLink  className="site-nav__link" className="site-nav__link" to='/#about'>
+                        <NavLink className="site-nav__link" className="site-nav__link" smooth to='/#about'>
                             About
                         </NavLink>
     
-                        <NavLink  className="site-nav__link" to='/#contact'>
+                        <NavLink className="site-nav__link" smooth to='/#contact'>
                             Contact
                         </NavLink>
                     </BrowserRouter>

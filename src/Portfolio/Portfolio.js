@@ -1,6 +1,5 @@
 import React, {useEffect, useRef} from 'react';
 import './Portfolio.scss';
-import port from './PortfolioAssets/port.jpg';
 import viewflix from './PortfolioAssets/viewflix.PNG';
 import bandsite from './PortfolioAssets/bandsite.PNG';
 import emotionalE from './PortfolioAssets/emotional-e.PNG';
@@ -92,12 +91,12 @@ const Portfolio = () => {
                         <div className="portfolio__text-ctn">
                         <h3 className="portfolio__project-title-2">Emotional-E</h3>
                             <p className="portfolio__text">An app that provides resources served up from a Node server to help users deal with negative emotional states.<br/>
-                                With each click of the resources user click data is sent to the back end and re-served via a chart to help users keep track of how they're emotional data. Users
-                                are also able to add notes via a modal component added to each page and keep journal notes of how they're feeling on a dailly basis.
+                                With each click of the resources, user click data is sent to the back end and re-served via a chart to help users keep track of they're emotional data. Users
+                                are also able to add notes via a modal component added to each page and keep journal notes of how they're feeling on a daily basis.
                             </p>
                             <div className="portfolio__link-ctn">
-                                <a href="https://github.com/ramsers/emotional-e" target="_blank" className="portfolio__link">View On Github</a>
-                                <a href="#" className="portfolio__link">Watch Demo Video</a>
+                                <a href="https://github.com/ramsers/emotional-e" rel="noopener noreferrer" target="_blank" className="portfolio__link">View On Github</a>
+                                <a href="https://www.loom.com/share/28ac8f5bf05249c0ad95390668b2fc93" rel="noopener noreferrer" target="_blank" className="portfolio__link">Watch Demo Video</a>
                             </div>
                         </div>
                     </div>
@@ -120,12 +119,12 @@ const Portfolio = () => {
                     <div ref={el => {projectHalf4 = el}} className="portfolio__highlight">
                         <div className="portfolio__text-ctn">
                         <h3 className="portfolio__project-title-2">ViewFlix</h3>
-                            <p className="portfolio__text">A video streaming site where users are able to click on suggested videos in the side bar and have them <br/>
-                                take the place of the main video. Users are able to comment on videos, as well as add to the side videos on the upload page. The video API data is stored via JSON file on the back-end and served up via the Node server.
+                            <p className="portfolio__text">A video streaming site where users are able to click on suggested videos generated from the API stored in the back end and have them
+                                take the place of the main video using React-Router. The video API data is served up via the Node server. Users are also able to add videos on the upload page.
                             </p>
                             <div className="portfolio__link-ctn">
-                                <a href="https://github.com/ramsers/raheim-bailey-brainflix/tree/master/sprint-3" target="_blank" className="portfolio__link">View On Github</a>
-                                <a href="#" className="portfolio__link">Watch Demo Video</a>
+                                <a href="https://github.com/ramsers/raheim-bailey-viewflix/tree/master/sprint-3" rel="noopener noreferrer" target="_blank" className="portfolio__link">View On Github</a>
+                                <a href="https://www.loom.com/share/550bf92e5126481a8467bb96f5e4488f" rel="noopener noreferrer" target="_blank" className="portfolio__link">Watch Demo Video</a>
                             </div>
                         </div>
                     </div>
@@ -147,13 +146,13 @@ const Portfolio = () => {
                     <div ref={el => {projectHalf6 = el}} className="portfolio__highlight">
                         <div className="portfolio__text-ctn">
                         <h3 className="portfolio__project-title-2">Justice Band Site</h3>
-                            <p className="portfolio__text">A mock website for the famed music Duo JUSTICE.<br/>  
-                                This was an exercise using vanilla JavaScript to connect with an API and creating DOM elements from that API data and displaying it on the page.
-                                There is a Dynamic aspect where users and fans are able to input their comments which are then posted to the API and then reappear in the list of comments on the homepage.
+                            <p className="portfolio__text">A fully responsive mock website for the famed music Duo JUSTICE. 
+                                This was an exercise in using vanilla JavaScript to connect with an API and creating DOM elements from that API data and displaying it on the page.
+                                There is a Dynamic aspect where users and fans are able to input their comments which are posted to the API and reappear in the list of comments on the homepage.
                             </p>
                             <div className="portfolio__link-ctn">
-                                <a href="https://github.com/ramsers/raheim-bailey-bandsite/tree/master/sprint-3" target="_blank" className="portfolio__link">View On Github</a>
-                                <a href="#" className="portfolio__link">Watch Demo Video</a>
+                                <a href="https://github.com/ramsers/raheim-bailey-bandsite/tree/master/sprint-3" rel="noopener noreferrer" target="_blank" className="portfolio__link">View On Github</a>
+                                <a href="https://www.loom.com/share/fc2a311fc7fc4545994127b88e588449" target="_blank" rel="noopener noreferrer" className="portfolio__link">Watch Demo Video</a>
                             </div>
                         </div>
                     </div>

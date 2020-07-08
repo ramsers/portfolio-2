@@ -20,9 +20,11 @@
         @include flex(row, center, "");
         @include desktop-small {
             height:85%;
+            padding-top: 8rem;
         }
         @include desktop {
             height: 82%;
+            padding-top: 8rem;
         }
     }
     &__content-ctn {
